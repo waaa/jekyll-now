@@ -25,7 +25,7 @@ Keep in mind that the number of aterisks should be equal at right and left side 
     branches = branches/*/project:refs/heads/*
     branches = branches/feature_*_2015:refs/heads/features/*
 
-You have an option of defining only the 'trunk' branch, and that's going to be a 'master' branch, the root of the project. In this case the layout is going to look like this:
+User has an option of defining only the 'trunk' branch, and that's going to be a 'master' branch, the root of the project. In this case the layout is going to look like this:
         
     trunk = :refs/heads/master
 
@@ -42,7 +42,7 @@ This wouldn't work, though, if the branches in SVN were created by copy + svn ad
 
 Always check your automatically generated layout! It’s being done all right in most cases, but it's always better to be sure.<br>
 
-It all does actually look quite simple, if you think about it. There are nevertheless some layout cases worth looking at them. For example, if layout looks like this:
+It all does actually look quite simple, if one thinks about it. There are nevertheless some layout cases worth looking at them. For example, if the layout looks like this:
 
    trunk = trunk:refs/heads/master
    branches = branches/*:refs/heads/*
@@ -78,7 +78,7 @@ And to the more complicated case. For example, what will happen with the layout 
 The first pattern only is going to be translated. For the reason that for the translation purposes of branch that is called ’x’, i.e. ‘branch/x’, refs/heads/x link will be created, which physically would be stored as GIT_REPO/refs/heads/x file, which leaves out the opportunity of creating a directory that has the same ‘x' name. And the other way around, refs/heads/x/y path excludes the opportunity of creating refs/heads/x file.
 SubGit always tends to choose patterns that translate as much references as possible, and in that case it is the first one, and thus the second would be ignored.
 
-As longs as we are on the topic of asterisks(‘*’), one should keep in mind that more that one asterisk is not allowed in one part of mapping equation, because it surely creates ambiguity during the translation, allowing at least two different interpretations. For example, if we have pattern like 'x*x*x', and string like 'xyxyxyx' (note, that in pattern there are three x's and in the string there are four), we could interpret it two differen ways: 'x-yxy-x-y-x' or 'x-y-x-yxy-x'. That can not be allowed in the branch mapping pattern.
+As longs as we are on the topic of asterisks(‘\*’), one should keep in mind that more that one asterisk is not allowed in one part of mapping equation, because it surely creates ambiguity during the translation, allowing at least two different interpretations. For example, if we have pattern like 'x\*x\*x', and string like 'xyxyxyx' (note, that in pattern there are three x's and in the string there are four), we could interpret it two differen ways: 'x-yxy-x-y-x' or 'x-y-x-yxy-x'. That can not be allowed in the branch mapping pattern.
 
 But to answer some long awaited calls <link to  http://stackoverflow.com/questions/36848669/subgit-exclude-old-tags-by-name> that's already allowed for the definition of paths that are to be exluded <link to Exclude Path>, e.g:
 
@@ -88,11 +88,11 @@ With help of ExcludePath option some problematic branches could be muted out of 
 
 For example, some SVN users keep their branches inside other branches' folders. 
 <picture with folders>
-In order to translate that piece of code to the Git, in case you want to keep the inner branch you will have to put the whole path to the inner folder in your configuration file:
+In order to translate that piece of code to the Git, in case it's needed to keep the inner branch the whole path should be put to the inner folder in the configuration file:
     
-    branches = branches/x/*:refs/heads/y/x/*
+    branches = branches/x/\*:refs/heads/y/x/\*
 
-If you want to keep the outer branch translated, you would probably want to keep the inner branch one out of translation, especially if it takes too much space on your hard-drive. It will work with putting following in the configuration file:
+If it's needed to keep the outer branch translated, it's probably better to keep the inner branch out of the translation, especially if it takes too much space on the hard-drive. It will work with putting following in the configuration file:
 
     branches  = branches/*:refs/heads/*
     excludeBranches = branches/y/x
