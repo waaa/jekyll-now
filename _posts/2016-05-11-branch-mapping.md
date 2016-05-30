@@ -35,7 +35,7 @@ This layout could be generated automatically by running the following command:
 
 And even more, there is a feature of autedetection the whole layout by running this:
 
-    $ subgit configure --layout auto --trunk path/to/trunk <directory name>
+    $ subgit configure --layout auto --trunk trunk/path <directory>
 
 It's important to know that running this command leads to auto-filling ‘authors.txt’ as well. <link to remote-book 3.3 authors mapping>
 This wouldn't work, though, if the branches in SVN were created by copy + svn add. (e.g. like in that repo: svn://svn.code.sf.net/p/desmume/code)
