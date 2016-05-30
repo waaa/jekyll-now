@@ -4,7 +4,7 @@ title: Branch mapping
 date: 2016-05-06
 ---
 
-To define user's repository layout we use branches mapping.
+To define user's repository layout SubGit uses branches mapping.
 Each folder is mapped to the reference (branch or tag) in the Git repository. For trunk folder the mapping is one-to-one as there could be only one trunk folder (as well as only one master reference in Git) and for other folders wildcard mapping could be used. Attention here, as what is left out is not translated by SubGit.
 SubGit distinguishes the following folders in Subversion project as branches or tags.
 Shelves <link to previous post> are special kind of branches used by SubGit to represent Git anonymous branches in Subversion repository. 
