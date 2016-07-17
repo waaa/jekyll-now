@@ -5,7 +5,7 @@ date: 2016-07-15
 ---
 This story is based completely on a personal experience of somebody quite dumb who’ve tried to install SubGit and succeeded. 
 It all began when I’ve decided to stop being oldschool and desired to move my humble Python project from SVN to Git.
-First thing I did? I googled-ed.
+First thing I did? I googled.
 
 <screenshot with google outcome>
 
