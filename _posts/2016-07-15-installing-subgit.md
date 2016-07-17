@@ -61,7 +61,7 @@ And at last! It said to run the ‘install’ command.
 		
 Once again, I’m the happiest girl in the world!
 
-<screenshot installation successful>
+<screenshot installation successfull>
 
 The next thing on my plan is to find out how exactly does it work! I’ll keep you updated..:)
 
