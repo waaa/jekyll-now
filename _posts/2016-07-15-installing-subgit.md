@@ -33,7 +33,7 @@ Now when you know where this link leads, you’ll understand the significance of
 
     subgit configure --layout auto http://188.213.173.182/svn/test test_git_repo.git
     
-Basically it says to SubGit to connect to my SVN repository using standard **auto** layout and create for it a **test_git_repo.git** repository just there, where the command has been executesd.
+Basically it says to SubGit to connect to my SVN repository and using standard **auto** layout create for it a **test_git_repo.git** repository just there, where the command is being executed.
 
 And an error had occurred! It said:
 
