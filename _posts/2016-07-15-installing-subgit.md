@@ -54,7 +54,7 @@ But I don’t need to do that at this point, I have only trunk at my SVN reposit
 Then it said I need to put my credentials to the **passwd** file that stays at the same **subgit** directory, which I did, but I’m not going to post a screenshot here! It’s pretty simple, just a name, couple of spaces and your SVN password.
 There was also something about adding authors there, but honestly nobody wants to commit to my repository apart from me, so I didn’t touch this one.
 
-And at last! It said to run the **install** command.
+And at last! I ran the **install** command:
 
     subgit install test_git_repo.git
 
