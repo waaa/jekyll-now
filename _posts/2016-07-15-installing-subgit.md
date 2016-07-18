@@ -58,7 +58,7 @@ And at last! I ran the **install** command:
 
     subgit install test_git_repo.git
 
-    Once again, I’m the happiest girl in the world!
+Once again, I’m the happiest girl in the world!
 
 ![Picture 6]({{ http://waaa.github.io }}/assets/installsuccess.png)
 
