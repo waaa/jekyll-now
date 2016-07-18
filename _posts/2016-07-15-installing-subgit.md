@@ -4,18 +4,17 @@ title: Installing SubGit
 date: 2016-07-15
 ---
 This story is based completely on a personal experience of somebody quite dumb who’ve tried to install SubGit and succeeded. 
-It all began when I’ve decided to stop being oldschool and desired to move my humble Python project from SVN to Git.
-First thing I did? I googled.
+It all began when I’ve decided to stop being oldschool and desired to move my humble Python project from SVN to Git. I heard about SubGit so I googled.
 
-<screenshot with google outcome>
+![Picture 1]({{ http://waaa.github.io }}/assets/google.png)
 
-First thing I’ve got was this website. It looked fun and it didn’t look too complicated a story.
+All in all I really liked this website. It looked fun and it didn’t look too complicated a story.
 
-<screenshot with a part of site text>
+![Picture 2]({{ http://waaa.github.io }}/assets/website.png)
 
 I wandered around a bit and found myself on a ‘Download’ section. It says there.. download.. unzip.. configure.. and it looked like that’s it. So all ready for a new adventure I’ve pressed ‘Download’ and soon enough I’ve got it, as it’s not that big a file.
 
-<screenshot with download bar finished>
+![Picture 3]({{ http://waaa.github.io }}/assets/download.png)
 
 I have to mention here that I’m using OS X. So ‘unzip’ part happened without me taking action as soon download was finished. So I’ve got this directory ( my IT friends’re saying that I can’t say folder it’s dumb! So pleasing them I’m going to use ‘directory’ word all over this article, if I do otherwise, please complain!) inside my ‘Downloads’ directory.
 Next thing I know I’m opening Terminal and doing
@@ -43,12 +42,12 @@ And an error had occurred! It said:
 A bit of googling took me to the Oracle website, to be precise <a href=http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>here</a>.
 So I’ve choosen the only Mac version there was,
 
-<screenshot of Mac version>
+![Picture 4]({{ http://waaa.github.io }}/assets/macversion.png)
 
 downloaded and installed that as a normal OS X application using graphic interface.
 I repeated ‘subgit configure’ command, it asked me for the password of my SVN repository and then.. yay!
 
-<screenshot installation successful>
+![Picture 5]({{ http://waaa.github.io }}/assets/configsuccess.png)
 
 It said in the output that I can play around with my branches mapping in the main SubGit config file, which lives at ‘subgit’ directory of the test_git_repo.git that had just been created by ‘configure’ command.
 But I don’t need to do that at this point, I have only trunk at my SVN repository so far.
@@ -57,11 +56,11 @@ There was also something about adding authors there, but honestly nobody wants t
 
 And at last! It said to run the ‘install’ command.
 
-    subgit install test_git_repo.git  
-		
-Once again, I’m the happiest girl in the world!
+    subgit install test_git_repo.git
 
-<screenshot installation successfull>
+    Once again, I’m the happiest girl in the world!
+
+![Picture 6]({{ http://waaa.github.io }}/assets/installsuccess.png)
 
 The next thing on my plan is to find out how exactly does it work! I’ll keep you updated..:)
 
