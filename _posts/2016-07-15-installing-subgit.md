@@ -3,7 +3,7 @@ layout: post
 title: Installing SubGit
 date: 2016-07-15
 ---
-This story is based completely on a personal experience of somebody quite dumb who’ve tried to install SubGit and succeeded. 
+This story is based completely on a personal experience of somebody quite dumb who’s tried to install SubGit and succeeded. 
 It all began when I’ve decided to stop being oldschool and desired to move my humble Python project from SVN to Git. I heard about SubGit so I googled.
 
 ![Picture 1]({{ http://waaa.github.io }}/assets/google.png)
