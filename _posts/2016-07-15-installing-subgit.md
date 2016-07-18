@@ -28,10 +28,12 @@ and then:
 
 The first command created symlink from **/usr/local/bin** to my SubGit executable file, and the second command actually granted this file a right to be executed.
 
-So now I’ll present to you my SVN repository. It lives by the address http://188.213.173.182/svn/test. You can’t see it because you don’t have a password. But trust me it’s there! Until I’m paying the server fee..
+So now I’ll present to you my SVN repository. It lives by the address http://188.213.173.182/svn/test. You can’t see it because you don’t have a password. But trust me it’s there! For as long as I’m paying the server fee..
 Now when you know where this link leads, you’ll understand the significance of a following command:
 
     subgit configure --layout auto http://188.213.173.182/svn/test test_git_repo.git
+    
+Basically it says to SubGit to connect to my SVN repository using standard **auto** layout and create for it a **test_git_repo.git** repository just there, where the command has been executesd.
 
 And an error had occurred! It said:
 
