@@ -47,7 +47,7 @@ So I’ve choosen the only Mac version there was:
 I downloaded and installed that as a normal OS X application using graphic interface.
 After repeating **subgit configure** command it asked me for the password of my SVN repository and then.. yay!
 
-![Picture 5]({{ http://waaa.github.io }}/assets/configsuccess.png)
+![Picture 5]({{ http://waaa.github.io }}/assets/configsuccess2.png)
 
 It said in the output that I could play around with my branches mapping in the main SubGit config file, which lives at **test_git_repo.git/subgit**, the repository that has been just created by **configure** command.
 But I don’t need to do that at this point, I have only trunk at my SVN repository so far.
