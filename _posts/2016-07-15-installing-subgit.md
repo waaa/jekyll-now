@@ -41,7 +41,7 @@ And an error had occurred! It said:
     Java version found         : 1.6.0_65
     Java version required      : 1.7 or newer
 
-A bit of googling took me to the Oracle website, to be precise here(link_to http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+A bit of googling took me to the Oracle website, to be precise <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">here</a>.
 So I’ve choosen the only Mac version there was:
 
 ![Picture 4]({{ http://waaa.github.io }}/assets/macversion.png)
