@@ -16,7 +16,7 @@ I wandered around a bit and found myself on a ‘Download’ section. It says th
 
 ![Picture 3]({{ http://waaa.github.io }}/assets/download.png)
 
-I have to mention here that I’m using OS X. So ‘unzip’ part happened without me taking action as soon as download was finished. So I’ve got this directory inside my ‘Downloads’ directory (my IT friends’re saying that I can’t say 'folder' anymore it’s considered unprofessional! So pleasing them I’m going to use ‘directory’ word all over this article, if I do otherwise, please complain!)
+I have to mention here that I’m using OS X. So ‘unzip’ part happened without me taking action as soon as download was finished. So I’ve got this directory inside my ‘Downloads’ directory (my IT friends’re saying that I can’t say 'folder' anymore it’s considered unprofessional! So pleasing them I’m going to use ‘directory’ word all over this article, if I do otherwise, please complain!).
 Next thing I know I’m opening Terminal and doing:
 
     sudo mv ~/Downloads/subgit-3.2-2.0 /etc/
